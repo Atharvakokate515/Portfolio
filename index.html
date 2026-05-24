@@ -141,8 +141,9 @@
     .project-num { position: absolute; top: 2rem; right: 2.5rem; font-family: var(--font-head); font-size: 4rem; font-weight: 800; color: rgba(128,139,52,0.07); line-height: 1; pointer-events: none; }
     .project-title { font-family: var(--font-head); font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 0.75rem; letter-spacing: -0.01em; }
     .project-date { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
-    .project-desc { color: var(--muted); font-size: 0.85rem; line-height: 1.85; margin-bottom: 1.5rem; list-style: none; }
-    .project-desc li { margin-bottom: 0.5rem; padding-left: 1.4rem; position: relative; }
+    .project-desc { color: var(--text); font-size: 0.85rem; line-height: 1.85; margin-bottom: 1.5rem; list-style: none; }
+    .project-desc strong { color: var(--highlight); font-weight: 600; }
+    .project-desc li { margin-bottom: 0.5rem; padding-left: 1.4rem; position: relative; font-weight: 500; }
     .project-desc li::before { content: '\2192'; position: absolute; left: 0; color: var(--accent2); }
     .project-stack { display: flex; flex-wrap: wrap; gap: 0.5rem; }
     .stack-tag { font-size: 0.7rem; color: var(--accent3); background: rgba(88,91,40,0.3); border: 1px solid rgba(88,91,40,0.5); padding: 0.2rem 0.6rem; border-radius: 2px; font-style: italic; }
@@ -227,12 +228,11 @@
     <div class="hero-actions">
       <a href="#projects" class="btn-primary">View Projects</a>
       <a href="#contact" class="btn-secondary">Get In Touch</a>
-      <a href="https://drive.google.com/file/d/1vu9tRS4ma8YAhcIcnpsUA5vgyIHX5krz/view?usp=drive_link" target="_blank" class="btn-secondary">Download Resume &#8599;</a>
+      <a href="https://drive.google.com/file/d/1AubjAWmZXPBwWhS2fFa7AaxvS8wj9Wii/view?usp=sharing" target="_blank" class="btn-secondary">Download Resume &#8599;</a>
     </div>
     <div class="hero-stats">
       <div><div class="stat-val">3+</div><div class="stat-lbl">AI Projects</div></div>
-      <div><div class="stat-val">5&#9733;</div><div class="stat-lbl">Multi-Agent Systems</div></div>
-      <div><div class="stat-val">97%</div><div class="stat-lbl">Uptime</div></div>
+      <div><div class="stat-val">2</div><div class="stat-lbl">Internships</div></div>
     </div>
   </div>
 </section>
@@ -268,24 +268,40 @@
   <h2>Tools &amp; Technologies.</h2>
   <div class="skills-grid">
     <div class="skill-cat fade-in">
-      <div class="skill-cat-title">&#9000; Development</div>
+      <div class="skill-cat-title">&#129504; Agentic AI &amp; LLM Engineering</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Multi-Agent Systems</span><span class="skill-tag">LangGraph</span><span class="skill-tag">CrewAI</span>
+        <span class="skill-tag">MCP</span><span class="skill-tag">LangChain</span><span class="skill-tag">RAG</span>
+        <span class="skill-tag">NL2SQL</span><span class="skill-tag">AI Copilots</span><span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">Chain of Thought</span><span class="skill-tag">Structured Outputs</span><span class="skill-tag">ReAct Pattern</span>
+        <span class="skill-tag">LLM Evaluation</span><span class="skill-tag">Hallucination Reduction</span>
+        <span class="skill-tag">Embeddings</span><span class="skill-tag">Semantic Search</span>
+      </div>
+    </div>
+    <div class="skill-cat fade-in">
+      <div class="skill-cat-title">&#9000; Backend &amp; Infrastructure</div>
       <div class="skill-tags">
         <span class="skill-tag">Python</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Flask</span>
-        <span class="skill-tag">React</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQLAlchemy</span><span class="skill-tag">Pytest</span>
+        <span class="skill-tag">REST APIs</span><span class="skill-tag">Async Processing</span><span class="skill-tag">SQLAlchemy</span>
+        <span class="skill-tag">Pydantic</span><span class="skill-tag">Redis</span><span class="skill-tag">Docker</span>
+        <span class="skill-tag">Git</span><span class="skill-tag">OAuth</span><span class="skill-tag">Middleware</span>
+        <span class="skill-tag">Observability</span><span class="skill-tag">Rate Limiting</span><span class="skill-tag">Failure Recovery</span>
       </div>
     </div>
     <div class="skill-cat fade-in">
-      <div class="skill-cat-title">&#129302; AI / ML</div>
+      <div class="skill-cat-title">&#128200; Databases &amp; Retrieval</div>
       <div class="skill-tags">
-        <span class="skill-tag">LangChain</span><span class="skill-tag">LangGraph</span><span class="skill-tag">CrewAI</span>
-        <span class="skill-tag">Machine Learning</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQL</span><span class="skill-tag">ChromaDB</span>
+        <span class="skill-tag">Vector Databases</span><span class="skill-tag">Hybrid Retrieval Pipelines</span><span class="skill-tag">Chunking Strategies</span>
       </div>
     </div>
     <div class="skill-cat fade-in">
-      <div class="skill-cat-title">&#128295; DevOps &amp; Tools</div>
+      <div class="skill-cat-title">&#129302; Machine Learning &amp; Data Science</div>
       <div class="skill-tags">
-        <span class="skill-tag">Git</span><span class="skill-tag">Docker</span><span class="skill-tag">Redis</span>
-        <span class="skill-tag">ChromaDB</span><span class="skill-tag">Streamlit</span>
+        <span class="skill-tag">Scikit-learn</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Matplotlib</span><span class="skill-tag">EDA</span><span class="skill-tag">Feature Engineering</span>
+        <span class="skill-tag">PCA</span><span class="skill-tag">Logistic Regression</span><span class="skill-tag">Decision Trees</span>
+        <span class="skill-tag">XGBoost</span><span class="skill-tag">PyMuPDF</span><span class="skill-tag">BeautifulSoup</span>
       </div>
     </div>
   </div>
@@ -294,7 +310,7 @@
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-label">03 &#8212; Projects</div>
-  <h2>Selected Work.</h2>
+  <h2>Personal Projects.</h2>
   <div class="projects-list">
 
     <div class="project-card fade-in">
@@ -303,10 +319,10 @@
       <a href="https://multi-agent-research-citation-engine.onrender.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;padding:0.45rem 1.1rem;background:rgba(153,170,66,0.15);border:1.5px solid var(--accent2);color:var(--highlight);font-family:var(--font-mono);font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-decoration:none;border-radius:3px;transition:background 0.2s,color 0.2s,border-color 0.2s;" onmouseover="this.style.background='rgba(153,170,66,0.28)';this.style.color='#fff'" onmouseout="this.style.background='rgba(153,170,66,0.15)';this.style.color='var(--highlight)'">&#128279; multi-agent-research-citation-engine.onrender.com &#8599;</a>
       <div class="project-date">March 2026</div>
       <ul class="project-desc">
-        <li>Built a multi-agent research system using CrewAI &amp; Python, generating citation-backed reports from plain-English queries.</li>
-        <li>Engineered a 5-agent pipeline with structured workflows, reducing hallucinations via validated, evidence-based outputs.</li>
-        <li>Integrated academic + web sources using Exa &amp; Tavily APIs, filtering top results through automated credibility scoring.</li>
-        <li>Developed extraction pipelines using PyMuPDF, BeautifulSoup &amp; token-controlled chunking, producing structured insights with metrics and references.</li>
+        <li>Built a <strong>multi-agent research system</strong> using <strong>CrewAI</strong> &amp; Python, generating <strong>citation-backed reports</strong> from plain-English queries.</li>
+        <li>Engineered a <strong>5-agent pipeline</strong> with structured workflows, reducing <strong>hallucinations</strong> via validated, evidence-based outputs.</li>
+        <li>Integrated academic + web sources using <strong>Exa &amp; Tavily APIs</strong>, filtering top results through <strong>automated credibility scoring</strong>.</li>
+        <li>Developed extraction pipelines using <strong>PyMuPDF</strong>, <strong>BeautifulSoup</strong> &amp; <strong>token-controlled chunking</strong>, producing structured insights with metrics and references.</li>
       </ul>
       <div class="project-stack">
         <span class="stack-tag">CrewAI</span><span class="stack-tag">Python</span><span class="stack-tag">PyMuPDF</span>
@@ -320,11 +336,11 @@
       <a href="https://datamind-nn2w.onrender.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;padding:0.45rem 1.1rem;background:rgba(153,170,66,0.15);border:1.5px solid var(--accent2);color:var(--highlight);font-family:var(--font-mono);font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-decoration:none;border-radius:3px;transition:background 0.2s,color 0.2s,border-color 0.2s;" onmouseover="this.style.background='rgba(153,170,66,0.28)';this.style.color='#fff'" onmouseout="this.style.background='rgba(153,170,66,0.15)';this.style.color='var(--highlight)'">&#128279; datamind-nn2w.onrender.com &#8599;</a>
       <div class="project-date">Feb &#8211; Mar 2026</div>
       <ul class="project-desc">
-        <li>Built two core AI systems &#8212; NL2SQL Engine and RAG Copilot Agent &#8212; using LangGraph, FastAPI, PostgreSQL, and ChromaDB, enabling non-technical users to query databases and documents via plain English with zero SQL knowledge.</li>
-        <li>Engineered a 5-stage NL2SQL pipeline with structured outputs and self-correcting retries, reducing query failures by ~60&#8211;70% and supporting multi-turn, context-aware queries.</li>
-        <li>Implemented a secure SQL execution layer with validation and read-only enforcement, ensuring safe and reliable database interactions.</li>
-        <li>Developed a hybrid RAG pipeline with optimized chunking and embeddings, improving retrieval accuracy and document understanding across large datasets.</li>
-        <li>Designed a multi-tool Copilot agent (NL2SQL + RAG + chat) with citation-based responses, confidence scoring, and observability metrics.</li>
+        <li>Built two core AI systems &#8212; <strong>NL2SQL Engine</strong> and <strong>RAG Copilot Agent</strong> &#8212; using <strong>LangGraph, FastAPI, PostgreSQL</strong>, and <strong>ChromaDB</strong>, enabling non-technical users to query databases and documents via plain English.</li>
+        <li>Engineered a <strong>5-stage NL2SQL pipeline</strong> with structured outputs and self-correcting retries, reducing query failures by <strong>~60&#8211;70%</strong> and supporting multi-turn, context-aware queries.</li>
+        <li>Implemented a <strong>secure SQL execution layer</strong> with validation and <strong>read-only enforcement</strong>, ensuring safe and reliable database interactions.</li>
+        <li>Developed a <strong>hybrid RAG pipeline</strong> with optimized chunking and embeddings, improving retrieval accuracy and document understanding across large datasets.</li>
+        <li>Designed a <strong>multi-tool Copilot agent</strong> (NL2SQL + RAG + chat) with <strong>citation-based responses</strong>, confidence scoring, and observability metrics.</li>
       </ul>
       <div class="project-stack">
         <span class="stack-tag">LangGraph</span><span class="stack-tag">FastAPI</span><span class="stack-tag">PostgreSQL</span>
@@ -337,9 +353,9 @@
       <div class="project-title">AI News Aggregator</div>
       <div class="project-date">Sep &#8211; Oct 2025</div>
       <ul class="project-desc">
-        <li>Built an automated news pipeline using Python, HuggingFace, and PostgreSQL, processing 50+ daily AI articles into condensed, ranked insights.</li>
-        <li>Engineered a 5-stage pipeline (scraping &#8594; summarization &#8594; ranking &#8594; delivery) with AI agents for semantic analysis and personalization.</li>
-        <li>Designed a robust backend using PostgreSQL, SQLAlchemy, and Docker, enabling incremental processing and failure recovery for reliable daily delivery.</li>
+        <li>Built an <strong>automated news pipeline</strong> using <strong>Python, HuggingFace</strong>, and <strong>PostgreSQL</strong>, processing <strong>50+ daily AI articles</strong> into condensed, ranked insights.</li>
+        <li>Engineered a <strong>5-stage pipeline</strong> (scraping &#8594; summarization &#8594; ranking &#8594; delivery) with AI agents for <strong>semantic analysis</strong> and personalization.</li>
+        <li>Designed a robust backend using <strong>PostgreSQL, SQLAlchemy</strong>, and <strong>Docker</strong>, enabling incremental processing and <strong>failure recovery</strong> for reliable daily delivery.</li>
       </ul>
       <div class="project-stack">
         <span class="stack-tag">Python</span><span class="stack-tag">HuggingFace</span><span class="stack-tag">PostgreSQL</span>
@@ -413,7 +429,7 @@
   </div>
   <div class="contact-btns">
     <a href="/cdn-cgi/l/email-protection#e982889d81889b9f88dcd8dca98e84888085c78a8684" class="btn-primary">Send a Message</a>
-    <a href="https://drive.google.com/file/d/1vu9tRS4ma8YAhcIcnpsUA5vgyIHX5krz/view?usp=drive_link" target="_blank" class="btn-secondary">Download Resume &#8599;</a>
+    <a href="https://drive.google.com/file/d/1AubjAWmZXPBwWhS2fFa7AaxvS8wj9Wii/view?usp=sharing" target="_blank" class="btn-secondary">Download Resume &#8599;</a>
   </div>
 </section>
 
@@ -423,11 +439,20 @@
   <span style="color:var(--accent1)">AI Systems Engineer &middot; Pune, Maharashtra</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+<script>
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         observer.unobserve(entry.target);
       }
-    })
+    });
+  });
+
+  // Example usage
+  document.querySelectorAll('.hidden').forEach(el => {
+    observer.observe(el);
+  });
+</script>
